@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Classes</title>
+</head>
+<body>
+    <h1>Live Classes</h1>
+    <ul>
+        {% for cls in classes %}
+        <li>
+            <strong>{{ cls.title }}</strong> <br>
+            Start Time: {{ cls.start_time }} <br>
+            Zoom Link: <a href="{{ cls.zoom_link }}" target="_blank">{{ cls.zoom_link }}</a> <br>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

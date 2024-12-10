@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Background</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Hero Section with Full-Screen Background Image */
+        .hero-section {
+            height: 100vh; /* Full viewport height */
+            background-image: url('images/main.png'); /* Path to your image */
+            background-size: cover; /* Ensures image covers the screen */
+            background-position: center; /* Centers the image */
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        /* Button Styling */
+        .hero-section button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7); /* Dark button background */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-section button:hover {
+            background-color: rgba(0, 0, 0, 0.9); /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <!-- Button to redirect to index.php -->
+        <button onclick="window.location.href='index.php';">Go to Homepage</button>
+    </div>
+</body>
+</html>
