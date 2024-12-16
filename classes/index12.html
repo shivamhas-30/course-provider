@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Classes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #0056b3;
+            margin-bottom: 20px;
+        }
+        .modal-button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px; /* add round corner */
+            width:60%;
+    
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .modal-button {
+        background: linear-gradient(to right, #ff0066, #ff6600);
+        color: white;
+        border: none;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition-duration: 0.4s;
+    }
+
+    .modal-button:hover {
+        background: linear-gradient(to right, #ff6600, #ff0066);
+        color: white;
+    }
+    </style>
+</head>
+<body>
+
+<h1>Live Classes</h1>
+
+<button class="modal-button" style="font-size: 24px; padding: 20px 40px;" onclick="openModal('googleClassModal')">Google Class</button>
+<button class="modal-button" style="font-size: 24px; padding: 20px 40px;" onclick="openModal('zoomClassModal')">Zoom Class</button>
+<button class="modal-button" style="font-size: 24px; padding: 20px 40px;" onclick="openModal('teamClassModal')">Team Class</button>
+<button class="modal-button" style="font-size: 24px; padding: 20px 40px;" onclick="openModal('whatsappClassModal')">WhatsApp Class</button>
+<hr>
+<button class="modal-button" style="font-size: 24px; padding: 20px 40px;" onclick="openModal('checkFeedbackModal')">Check Feedback</button>
+<button class="modal-button" style="font-size: 24px; padding: 20px 40px;" onclick="openModal('uploadedFeedbackModal')">Upload Excel File</button>
+<button class="modal-button" style="font-size: 24px; padding: 20px 40px;" onclick="openModal('generateCertificateModal')">Generate Certificate</button>
+
+
+<div id="googleClassModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('googleClassModal')">&times;</span>
+        <h2>Google Class</h2>
+        <p>Join our Google Class <a href="https://meet.google.com/landing" target="_blank">here</a>.</p>
+    </div>
+</div>
+
+<div id="zoomClassModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('zoomClassModal')">&times;</span>
+        <h2>Zoom Class</h2>
+        <p>Join our Zoom Class <a href="https://zoom.us" target="_blank">here</a>.</p>
+    </div>
+</div>
+
+<div id="teamClassModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('teamClassModal')">&times;</span>
+        <h2>Team Class</h2>
+        <p>Join our Team Class <a href="https://teams.microsoft.com" target="_blank">here</a>.</p>
+    </div>
+</div>
+
+<div id="whatsappClassModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('whatsappClassModal')">&times;</span>
+        <h2>WhatsApp Class</h2>
+        <p>Open WhatsApp <a href="https://web.whatsapp.com" target="_blank">here</a>.</p>
+    </div>
+</div>
+
+<div id="checkFeedbackModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('checkFeedbackModal')">&times;</span>
+            <h2><a href="https://docs.google.com/forms/d/1toN4zV2zU0NfQMTSFdB4UKjtlWFnGEMHywPkcaGXWAw/edit#responses" target="_blank">Go To Feedback Sheet</a>.</h2>
+    </div>
+</div>
+
+<div id="uploadedFeedbackModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('uploadedFeedbackModal')">&times;</span>
+        <h2>Upload Excel File</h2>
+        <p>Upload Excel Feedback file <a href="upload.php">here</a>.</p>
+    </div>
+</div>
+<script>
+    function openModal(modalId) {
+        document.getElementById(modalId).style.display = 'flex';
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = 'none';
+    }
+
+  
+</script>
+
+</body>
+</html>
+

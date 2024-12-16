@@ -128,6 +128,7 @@ if (isset($_POST['submit'])) {
             <input type="password" name="password" required placeholder="Enter admin password">
             
             <button type="submit" name="submit">Login</button>
+            
         </form>
     </div>
 </body>

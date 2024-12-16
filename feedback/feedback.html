@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="feedback.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <form action="#" class="form-group">
+        <h2>Tell us what you think</h2>
+        <input class="form-control" type="text" placeholder="Name" />
+        <input class="form-control" type="text" placeholder="Email" />
+        <textarea id="fb-comment" name="" class="form-control" placeholder="Tell us what you think"></textarea>
+        
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+        </div>
+        
+        <input type="submit" class="form-control btn btn-primary" />
+    </form>
+
+    <script>
+        $(document).ready(function() {
+            $('.rating .fa-star').click(function() {
+                $('.rating .active-rating').removeClass('active-rating');
+                $(this).toggleClass('active-rating');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -122,7 +122,6 @@
     <h3 style="text-align: center; color: white; font-size: 30px;">Gallery </h3>
     <div class="gallery" id="gallery"></div>
     <div style="position: absolute; top: 10px; left: 10px;">
-        <a href="dashboard.php" class="back-button">&larr; Back</a>
     </div>
 
     <div id="myModal" class="modal">

@@ -1,0 +1,32 @@
+[
+    {
+        "page_number": 1,
+        "image_path": "output_images\\page_1.png",
+        "status": "converted"
+    },
+    {
+        "page_number": 2,
+        "image_path": "output_images\\page_2.png",
+        "status": "converted"
+    },
+    {
+        "page_number": 3,
+        "image_path": "output_images\\page_3.png",
+        "status": "converted"
+    },
+    {
+        "page_number": 4,
+        "image_path": "output_images\\page_4.png",
+        "status": "converted"
+    },
+    {
+        "page_number": 5,
+        "image_path": "output_images\\page_5.png",
+        "status": "converted"
+    },
+    {
+        "page_number": 6,
+        "image_path": "output_images\\page_6.png",
+        "status": "converted"
+    }
+]
